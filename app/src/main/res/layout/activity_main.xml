@@ -53,7 +53,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <EditText
-            android:id="@+id/editTextTextMultiLine"
+            android:id="@+id/editTextAnotacao"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@color/cor_fundo"
