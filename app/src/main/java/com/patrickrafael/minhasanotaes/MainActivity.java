@@ -20,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Hide action bar
+        getSupportActionBar().hide();
+
 
         editAnotacao = findViewById(R.id.editTextAnotacao);
 
@@ -37,17 +40,12 @@ public class MainActivity extends AppCompatActivity {
                 String textoRecuperado = editAnotacao.getText().toString();
 
                 //validar oque foi escrito
-                if (textoRecuperado.equals("")) {
-
-                    Snackbar.make(view, "Preencha O texto!", Snackbar.LENGTH_LONG).show();
-
-                } else {
 
                     preferencias.salvarAnotacao(textoRecuperado);
                     Snackbar.make(view, "Anotação Salva!", Snackbar.LENGTH_LONG).show();
 
 
-                }
+
 
             }
         });
